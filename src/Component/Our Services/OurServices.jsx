@@ -88,7 +88,7 @@ const OurServices = () => {
                   size={"32px"}
                   cursor={"pointer"}
                   // color={card.iconColor}
-                  style={{ color: `${card.iconColor}`, hoverColor: "black" } }
+                  style={{ color: `${card.iconColor}`, hoverColor: "black" }}
                 />
                 <h2 className="font-Rajdhani text-[22.5px]  leading-7 text-[#091a38] font-bold">
                   {card.title}
