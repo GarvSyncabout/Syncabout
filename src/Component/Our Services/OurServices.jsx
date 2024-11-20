@@ -83,7 +83,11 @@ const OurServices = () => {
                 className="bg-white rounded hover:bg-[#f9f2e4] hover:translate-y-[-10px] hover:ease-in-out duration-500  shadow-sm p-4 h-[280px] gap-3 flex justify-center items-center flex-col w-[310px]"
                 key={index}
               >
-                <FaCircleArrowRight size={"32px"} cursor={"pointer"} />
+                <FaCircleArrowRight
+                  size={"32px"}
+                  cursor={"pointer"}
+                  color={card.iconColor}
+                />
                 <h2 className="font-Rajdhani text-[22.5px]  leading-7 text-[#091a38] font-bold">
                   {card.title}
                 </h2>
