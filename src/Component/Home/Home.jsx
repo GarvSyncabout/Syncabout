@@ -10,7 +10,7 @@ const Home = () => {
       <div className="grid place-content-center gap-1 place-items-center px-5  grid-cols-1 md:grid-cols-2 ">
         <div className="flex justify-center items-start flex-col gap-4">
           <span className="text-[#ef7f1a] text-xl  font-normal font-Pontano">
-            Wellcome To Syncabout
+            Welcome To Syncabout
           </span>
           <h1 className="font-Rajdhani font-bold text-[54px] leading-[65.916px] text-[#091a38]">
             Your Trusted Partner for Web design &<br /> Development Services
