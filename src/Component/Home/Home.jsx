@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import LottieExample from "../aboutusanimation-image/LottieExample";
 import OurServices from "../Our Services/OurServices";
+import Digitalsolution from "../DigitalSolutions/Digitalsolution";
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
         </div>
       </div>
       <OurServices />
+      <Digitalsolution />
     </section>
   );
 };

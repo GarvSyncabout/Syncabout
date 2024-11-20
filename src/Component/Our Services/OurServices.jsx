@@ -47,10 +47,13 @@ const OurServices = () => {
     },
   ];
 
+  const video =
+    "https://syncaboutsolutions.com/wp-content/uploads/2024/04/Sync_Video.mp4";
+
   return (
     <section className="bg-[#091a38] h-auto py-9">
       <div className=" flex justify-center items-center flex-col gap-7">
-        <div className=" grid grid-cols-1  md:grid-cols-4 place-items-center p-4 gap-2 place-content-between text-center">
+        <div className="mb-20 grid grid-cols-1  md:grid-cols-4 place-items-center p-4 gap-2 place-content-between text-center">
           <div className="flex items-start justify-center flex-col">
             <h3 className="font-Rajdhani text-lg leading-5 text-[#ef7f1a] font-bold">
               Innovative Custom Solutions
@@ -76,7 +79,7 @@ const OurServices = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 content-center place-content-center w-full place-items-center text-center gap-5">
+        <div className=" mb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  content-center place-content-center w-full place-items-center text-center gap-5">
           {cards.map((card, index) => {
             return (
               <div
@@ -97,6 +100,21 @@ const OurServices = () => {
               </div>
             );
           })}
+        </div>
+
+        <div className="bg-[#fbf2e0]  p-5  md:px-32 py-10 flex justify-center items-center">
+          <video
+            src={video}
+            className=" w-auto   md:w-[800px]  "
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            controls="controls"
+            autoplay="true"
+            loop="true"
+          />
         </div>
       </div>
     </section>
