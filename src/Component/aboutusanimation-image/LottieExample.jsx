@@ -15,3 +15,4 @@ const LottieExample = () => {
 };
 
 export default LottieExample;
+ 
