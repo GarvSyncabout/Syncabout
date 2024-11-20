@@ -8,11 +8,11 @@ import OurServices from "./Component/Our Services/OurServices";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/syncabout/",
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: "/syncabout/",
         element: <Home />,
       },
       // {
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       //   element: <About />,
       // },
       {
-        path: "/services",
+        path: "/syncabout/",
         element: <OurServices />,
       },
     ],
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <main className="m-auto w-full max-w-[1280px]">
-      <RouterProvider router={router} basename="/syncabout/" />
+      <RouterProvider router={router} />
     </main>
   );
 }
