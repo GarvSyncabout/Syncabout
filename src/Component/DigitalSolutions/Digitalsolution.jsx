@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Digitalsolution = () => {
   return (
     <section>
-      <div className="gap-3 p-5 grid grid-cols-1 md:grid-cols-2">
+      <div className="gap-10 p-5 grid grid-cols-1 md:grid-cols-2 place-content-center place-items-center  ">
         <div>
           <img src="./digitalsolutions.jpg" className="rounded" />
         </div>
