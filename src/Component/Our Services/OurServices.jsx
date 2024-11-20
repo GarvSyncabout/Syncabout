@@ -14,19 +14,19 @@ const OurServices = () => {
       title: "Software Development",
       description:
         "We help our partners accelerate disruption both within their organization and industries.",
-      iconColor: "#e1eee0",
+      iconColor: "#ade0cd",
     },
     {
       title: "Mobile App Development",
       description:
         "We develop ideas into mobile applications that make someone's business easier.",
-      iconColor: "#ebc28e",
+      iconColor: "#fecf5c",
     },
     {
       title: "Custom ERP Development",
       description:
         "Syncabout excels in end-to-end ERP development and dedicated support.",
-      iconColor: "#ebc28e",
+      iconColor: "#fecf5c",
     },
     {
       title: "SEO Services",
@@ -38,15 +38,16 @@ const OurServices = () => {
       title: "Social Media Marketing",
       description:
         "Social marketing is useful when it used with the right method and algorithm.",
-      iconColor: "#e1eee0",
+      iconColor: "#ade0cd",
     },
     {
       title: "AWS",
       description:
         "In addition to offering a robust set of AWS services, our IT company specializes in guiding clients through every phase of their cloud journey.",
-      iconColor: "#ebc28e",
+      iconColor: "#fecf5c",
     },
   ];
+
   return (
     <section className="bg-[#091a38] h-auto py-9">
       <div className=" flex justify-center items-center flex-col gap-7">
@@ -75,7 +76,8 @@ const OurServices = () => {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 content-around w-full place-items-center text-center gap-5">
+
+        <div className="grid grid-cols-1 md:grid-cols-3 content-center place-content-center w-full place-items-center text-center gap-5">
           {cards.map((card, index) => {
             return (
               <div
@@ -85,8 +87,8 @@ const OurServices = () => {
                 <FaCircleArrowRight
                   size={"32px"}
                   cursor={"pointer"}
-                  color={card.iconColor}
-                  className="!hover:text-black"
+                  // color={card.iconColor}
+                  style={{ color: `${card.iconColor}`, hoverColor: "black" } }
                 />
                 <h2 className="font-Rajdhani text-[22.5px]  leading-7 text-[#091a38] font-bold">
                   {card.title}
