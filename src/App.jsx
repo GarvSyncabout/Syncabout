@@ -30,7 +30,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <main className="m-auto w-full max-w-[1280px]">
-      <RouterProvider router={router} basename="syncabout" />
+      <RouterProvider router={router} basename="/syncabout/" />
     </main>
   );
 }
