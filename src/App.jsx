@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       //   element: <About />,
       // },
       {
-        path: "/syncabout/",
+        path: "/syncabout/service",
         element: <OurServices />,
       },
     ],
