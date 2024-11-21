@@ -1,7 +1,22 @@
 import { Link } from "react-router-dom";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import { useState, useRef, useEffect } from "react";
+import { Waypoint } from "react-waypoint";
 
 const OurServices = () => {
+  const [playing, setPlaying] = useState(false);
+  const videoRef = useRef(null);
+
+  const handleVideoPress = () => {
+    if (playing) {
+      videoRef.current.pause();
+      setPlaying(false);
+    } else {
+      videoRef.current.play();
+      setPlaying(true);
+    }
+  };
+
   const cards = [
     {
       title: "Web Development",
@@ -103,18 +118,22 @@ const OurServices = () => {
         </div>
 
         <div className="bg-[#fbf2e0]  p-5  md:px-32 py-10 flex justify-center items-center">
-          <video
-            src={video}
-            className=" w-auto   md:w-[800px]  "
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-            controls="controls"
-            autoplay="true"
-            loop="true"
-          />
+          <Waypoint onEnter={handleVideoPress} onLeave={handleVideoPress}>
+            <video
+              src={video}
+              onClick={handleVideoPress}
+              ref={videoRef}
+              className=" w-auto   md:w-[800px]  "
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              controls="controls"
+              autoplay="true"
+              loop="true"
+            />
+          </Waypoint>
         </div>
       </div>
     </section>
