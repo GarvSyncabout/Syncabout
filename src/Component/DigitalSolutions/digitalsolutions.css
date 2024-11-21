@@ -1,0 +1,11 @@
+
+
+
+.digitalsolutions img {
+  position: relative;
+}
+
+.digitalsolutions img::after {
+  content: "ffffffffffff";
+  position: absolute;
+}

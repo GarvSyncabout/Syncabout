@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaCircleArrowRight } from "react-icons/fa6";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { Waypoint } from "react-waypoint";
 
 const OurServices = () => {
@@ -130,8 +130,8 @@ const OurServices = () => {
                 alignItems: "center",
               }}
               controls="controls"
-              autoplay="true"
-              loop="true"
+              // autoplay="true"
+              // loop="true"
             />
           </Waypoint>
         </div>
