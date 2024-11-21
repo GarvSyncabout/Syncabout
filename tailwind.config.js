@@ -5,7 +5,7 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "node_modules/preline/dist/*.js",
+    // "node_modules/preline/dist/*.js",
   ],
   theme: {
     extend: {
@@ -15,5 +15,5 @@ export default {
       },
     },
   },
-  plugins: [require("preline/plugin")],
+  // plugins: [require("preline/plugin")],
 };

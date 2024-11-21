@@ -8,11 +8,11 @@ import OurServices from "./Component/Our Services/OurServices";
 
 const router = createBrowserRouter([
   {
-    path: "/syncabout/",
+    path: "/",
     element: <Layout />,
     children: [
       {
-        path: "/syncabout/",
+        path: "/",
         element: <Home />,
       },
       // {
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       //   element: <About />,
       // },
       {
-        path: "/syncabout/",
+        path: "/services",
         element: <OurServices />,
       },
     ],
