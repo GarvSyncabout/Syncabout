@@ -6,8 +6,8 @@ import Digitalsolution from "../DigitalSolutions/Digitalsolution";
 
 const Home = () => {
   return (
-    <section>
-      <div className="grid place-content-center gap-1 place-items-center px-5  grid-cols-1 md:grid-cols-2 ">
+    <section className="pt-24 md:mt-10 md:absolute">
+      <div className="md:h-screen grid place-content-center gap-1 place-items-center px-5 grid-cols-1 md:grid-cols-2 ">
         <div className="flex justify-center items-start flex-col gap-4">
           <span className="text-[#ef7f1a] text-xl  font-normal font-Pontano">
             Welcome To Syncabout
