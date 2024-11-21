@@ -66,8 +66,8 @@ const OurServices = () => {
     "https://syncaboutsolutions.com/wp-content/uploads/2024/04/Sync_Video.mp4";
 
   return (
-    <section className="bg-[#091a38] h-auto py-9">
-      <div className=" flex justify-center items-center flex-col gap-7">
+    <section className="flex justify-center items-center bg-[#091a38] h-auto py-9">
+      <div className=" flex justify-center h-auto items-center flex-col gap-7">
         <div className="mb-20 grid grid-cols-1  md:grid-cols-4 place-items-center p-4 gap-2 place-content-between text-center">
           <div className="flex items-start justify-center flex-col">
             <h3 className="font-Rajdhani text-lg leading-5 text-[#ef7f1a] font-bold">

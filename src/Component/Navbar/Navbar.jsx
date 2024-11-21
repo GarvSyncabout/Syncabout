@@ -19,7 +19,7 @@ const Navbar = () => {
             <IoClose />
           </label>
           <li>
-            <a href="#">Home</a>
+            <Link to={"/"}>Home</Link>
           </li>
           <li>
             <a href="#" className="desktop-item">
@@ -75,7 +75,7 @@ const Navbar = () => {
                 <a href="#">SEO Service</a>
               </li>
               <li>
-                <a href="#">Social Media Marketing</a>
+                <Link to={"/services"}>Social Media Marketing</Link>
               </li>
             </ul>
           </li>

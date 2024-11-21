@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../DigitalSolutions/digitalsolutions.css";
+import Digitalswiper from "../digitasolutionswiper/Digitalswiper";
 
 const Digitalsolution = () => {
   return (
@@ -36,6 +37,25 @@ const Digitalsolution = () => {
           </Link>
         </div>
       </div>
+      <div className="grid place-content-center mt-6 gap-4 p-5 place-items-start grid-cols-1 md:grid-cols-2">
+        <div>
+          <span className="font-Rajdhani text-start text-lg font-bold text-[#ef7f1a] leading-[21.6px]">
+            WE WORK WITH POPULAR BRANDS
+          </span>
+          <h3 className="font-Rajdhani text-[43.95px] text-start leading-[52.74px] font-bold text-[#091a38]">
+            Your Trusted Digital Partner
+          </h3>
+        </div>
+        <div>
+          <span className="flex items-start justify-center flex-col font-Pontano text-xl leading-9 font-normal text-[#091a38] ">
+            Become part of a global success story with us as your trusted
+            digital partner. Unlock incredible growth and innovation as we
+            navigate the digital landscape together. Your success is our
+            mission.
+          </span>
+        </div>
+      </div>
+      <Digitalswiper />
     </section>
   );
 };

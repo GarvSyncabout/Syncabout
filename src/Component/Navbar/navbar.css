@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 nav {
-  position: fixed;
-  z-index: 99;
+  position: sticky;
+  z-index: 10000;
   width: 100%;
   background: white;
 }
