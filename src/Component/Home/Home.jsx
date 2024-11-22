@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import LottieExample from "../aboutusanimation-image/LottieExample";
 import OurServices from "../Our Services/OurServices";
 import Digitalsolution from "../DigitalSolutions/Digitalsolution";
+import Uiux from "../Redsign/Uiux";
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
       </div>
       <OurServices />
       <Digitalsolution />
+      <Uiux />
     </section>
   );
 };

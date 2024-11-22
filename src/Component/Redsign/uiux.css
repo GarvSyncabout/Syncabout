@@ -1,0 +1,10 @@
+.uiuxsection {
+  position: relative;
+}
+
+.card {
+  content: "";
+  position: absolute;
+  z-index: 99999;
+  bottom: -220px;
+}

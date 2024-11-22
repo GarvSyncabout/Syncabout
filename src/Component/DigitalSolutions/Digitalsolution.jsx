@@ -5,7 +5,7 @@ import Digitalswiper from "../digitasolutionswiper/Digitalswiper";
 
 const Digitalsolution = () => {
   return (
-    <section>
+    <section className="bg-[#fbf9f9]">
       <div className="gap-10 p-5 grid grid-cols-1 md:grid-cols-2 place-content-center place-items-center  ">
         <div className="digitalsolutions">
           <img src="./digitalsolutions.jpg" className=" rounded" />
