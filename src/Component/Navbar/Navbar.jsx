@@ -119,7 +119,7 @@ const Navbar = () => {
           <div>
             <Link
               to={"/"}
-              className="bg-[#ef7f1a]  p-4 rounded hover:bg-[#091a38] text-white font-Pontano font-bold text-base"
+              className="bg-[#ef7f1a]  p-4 rounded hover:bg-[#091a38] ml-7 text-white font-Pontano font-bold text-base"
             >
               Contact Us
             </Link>

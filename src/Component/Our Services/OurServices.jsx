@@ -94,7 +94,7 @@ const OurServices = () => {
           </div>
         </div>
 
-        <div className=" mb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  content-center place-content-center w-full place-items-center text-center gap-5">
+        <div className="mb-20 flex justify-center flex-wrap gap-20">
           {cards.map((card, index) => {
             return (
               <div
@@ -105,11 +105,12 @@ const OurServices = () => {
                   size={"32px"}
                   cursor={"pointer"}
                   color={card.iconColor}
+                  className="hover:translate-y-[-10px] hover:ease-in-out duration-500 hover:fill-[#091a38]"
                 />
                 <h2 className="font-Rajdhani text-[22.5px]  leading-7 text-[#091a38] font-bold">
                   {card.title}
                 </h2>
-                <p className="text-lg leading-[30.6px] font-Pontano font-medium text-[##464646] ">
+                <p className="text-lg leading-[30.6px] text-center te font-Pontano font-medium text-[##464646] ">
                   {card.description}
                 </p>
               </div>
