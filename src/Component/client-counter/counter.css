@@ -1,0 +1,21 @@
+.counter {
+  position: relative;
+}
+
+.counter:after {
+  content: "+";
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 37px;
+}
+
+.counterGrid:nth-child(1),
+.counterGrid:nth-child(3) {
+  border-right: 1px solid #1d2f53;
+}
+
+.counterGrid:nth-child(1),
+.counterGrid:nth-child(2) {
+  border-bottom: 1px solid #1d2f53;
+}

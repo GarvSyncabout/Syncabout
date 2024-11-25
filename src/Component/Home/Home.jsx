@@ -4,6 +4,7 @@ import LottieExample from "../aboutusanimation-image/LottieExample";
 import OurServices from "../Our Services/OurServices";
 import Digitalsolution from "../DigitalSolutions/Digitalsolution";
 import Uiux from "../Redsign/Uiux";
+import Clientcounter from "../client-counter/Clientcounter";
 
 const Home = () => {
   return (
@@ -34,6 +35,7 @@ const Home = () => {
       <OurServices />
       <Digitalsolution />
       <Uiux />
+      <Clientcounter />
     </section>
   );
 };

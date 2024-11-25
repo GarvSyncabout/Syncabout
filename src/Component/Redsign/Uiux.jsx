@@ -38,10 +38,55 @@ const Uiux = () => {
     },
   ];
 
+  const companyValuesCards = [
+    {
+      id: "1",
+      number: "01",
+      title: "Innovation",
+      description:
+        "Constantly seek and implement new ideas and technologies to stay at the forefront of the industry.",
+    },
+    {
+      id: "2",
+      number: "02",
+      title: "Customer-Centricity",
+      description:
+        "Prioritize understanding and meeting the needs of our clients to ensure their success and satisfaction.",
+    },
+    {
+      id: "3",
+      number: "03",
+      title: "Integrity",
+      description:
+        "Uphold honesty and transparency in all our dealings, fostering trust with clients, partners, and team members.",
+    },
+    {
+      id: "4",
+      number: "04",
+      title: "Collaboration",
+      description:
+        "Embrace teamwork and open communication, recognizing that collaboration enhances creativity and problem-solving.",
+    },
+    {
+      id: "5",
+      number: "05",
+      title: "Quality Excellence",
+      description:
+        "Strive for excellence in every aspect of our work, delivering high-quality products and services.",
+    },
+    {
+      id: "6",
+      number: "06",
+      title: "Adaptability",
+      description:
+        "Be flexible and adaptive to change, recognizing it as an opportunity for growth and improvement.",
+    },
+  ];
+
   return (
     <>
-      <section className="uiuxsection bg-[#091a38] lg:h-[500px]">
-        <div className="ui-ux-wrapper py-16 px-4">
+      <section className=" bg-[#091a38] lg:h-[500px]">
+        <div className=" py-16 px-4">
           <div className=" grid place-content-center    gap-4 p-5 place-items-start grid-cols-1 md:grid-cols-2">
             <div>
               <span className="font-Rajdhani text-start text-lg font-bold text-[#ef7f1a] leading-[21.6px]">
@@ -101,7 +146,48 @@ const Uiux = () => {
           </div>
         </div>
       </section>
-      <section className="h-screen bg-[#fbf9f9]"></section>
+      <section className="  bg-[#fbf9f9] pb-10">
+        <div
+          id="wrapper"
+          className="flex justify-center gap-16 flex-col items-center  pt-60 "
+        >
+          <div className="inherent-content flex justify-center gap-2 items-center flex-col">
+            <span className="text-[#ef7f1a] font-Rajdhani  text-[18px] leading-5 font-bold">
+              Inherent Ideals
+            </span>
+            <h3 className="font-Rajdhani text-[43px] leading-[52px]  font-bold text-[#091a38]">
+              Our Company Core Values
+            </h3>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 place-content-center place-items-center gap-16 p-5">
+            {companyValuesCards.map((cards) => {
+              return (
+                <div
+                  key={cards.id}
+                  className="relative flex rounded justify-center items-start gap-2 flex-col border-dashed  border-[#dbdbdb] max-w-80 min-h-72 p-7 border-[2px] hover:border-[#ef7f1a] hover:border-solid "
+                >
+                  <div className="absolute -top-11 left-4  md:-left-7 px-3 z-50 bg-[#fbf2e0]  rounded-full">
+                    <span
+                      style={{ WebkitTextStroke: "1px #ef7f1a" }}
+                      className="font-Rajdhani text-[54.93px] text-transparent font-bold"
+                    >
+                      {cards.number}
+                    </span>
+                  </div>
+                  <div className="flex justify-center items-start flex-col gap-2">
+                    <span className="text-[#091a38] font-Rajdhani font-bold text-[22px] leading-[27px] ">
+                      {cards.title}
+                    </span>
+                    <p className="font-Pontano text-lg leading-[30px] font-medium text-gray-700">
+                      {cards.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
     </>
   );
 };

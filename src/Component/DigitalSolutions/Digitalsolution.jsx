@@ -7,8 +7,13 @@ const Digitalsolution = () => {
   return (
     <section className="bg-[#fbf9f9]">
       <div className="gap-10 p-5 grid grid-cols-1 md:grid-cols-2 place-content-center place-items-center  ">
-        <div className="digitalsolutions">
+        <div className="relative digitalsolutions">
           <img src="./digitalsolutions.jpg" className=" rounded" />
+          <div className="absolute bottom-1 rounded-tl rounded-bl p-8 w-[300px] right-0 bg-[#fecf5b]">
+            <span className="font-Rajdhani text-[22px] leading-7 font-bold text-[091a38] ">
+              We are true partners who care about your success.
+            </span>
+          </div>
         </div>
         <div className="flex justify-center items-start text-start flex-col gap-3">
           <span className="font-Rajdhani text-lg font-bold text-[#ef7f1a] leading-[21.6px]">

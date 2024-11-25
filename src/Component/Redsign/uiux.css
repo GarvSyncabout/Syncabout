@@ -1,0 +1,6 @@
+.inherent-content:before {
+  content: "\2193";
+  position: "absolute";
+  color: #ef7f1a;
+  font-size: 50px;
+}
